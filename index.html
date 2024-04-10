@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+</head>
+<body>
+<form id="registrationForm">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="registrationType">Registration Type:</label>
+        <select id="registrationType" name="registrationType" required>
+            <option value="">Please select</option>
+            <option value="Attendee">Attendee</option>
+            <option value="Speaker">Speaker</option>
+            <option value="Sponsor">Sponsor</option>
+        </select>
+    </div>
+    <div id="ticketsWrapper" style="display:none;">
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1">
+    </div>
+    <div id="topicWrapper" style="display:none;">
+        <label for="topic">Presentation Topic:</label>
+        <input type="text" id="topic" name="topic">
+    </div>
+    <div>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the Terms and Conditions</label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<script>
+    document.getElementById("registrationType").addEventListener("change", function() {
+        var type = this.value;
+        document.getElementById("ticketsWrapper").style.display = type === "Attendee" ? "block" : "none";
+        document.getElementById("topicWrapper").style.display = type === "Speaker" ? "block" : "none";
+    });
+</script>
+</body>
+</html>
