@@ -35,7 +35,7 @@ Your task is to develop test cases and automated tests for a web-based “Event 
   - Any observations or notes about test cases that are expected to fail and why, highlighting understanding of potential UI issues or areas for improvement.
 4. **Submission Instructions:**
   - Combine your test case document and source code files (including the README) into a single ZIP file.
-  - Submit your ZIP file via the email to `eman@maze.digital`.
+  - Submit your ZIP file via the email.
 #### Evaluation Criteria
 - **Comprehensiveness of Test Scenarios:** Coverage of various functional and non-functional aspects of the form, including edge cases.
 - **Detail and Clarity of Test Cases:** The thoroughness and clarity in the documentation of test cases, highlighting your attention to detail and understanding of potential user interactions.
